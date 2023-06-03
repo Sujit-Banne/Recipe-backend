@@ -68,7 +68,7 @@ router.delete('/:id', async (req, res) => {
         if (!recipe) {
             res.status(400).json({ message: "no recipe find by that id" })
         } else {
-            res.status(200).json({ message: "book deleted", recipe })
+            res.status(200).json({ message: "recipe deleted", recipe })
         }
 
     } catch (err) {
